@@ -1,0 +1,21 @@
+project:
+  type: book
+
+book:
+  title: "IPI WS23/24 Notes"
+  author: "Igor Dimitrov"
+  date: "10/30/2023"
+  chapters:
+    - index.qmd
+  downloads: pdf
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
