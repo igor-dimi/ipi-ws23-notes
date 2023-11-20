@@ -5,5 +5,12 @@
     "title": "IPI WS23/24 Notes",
     "section": "",
     "text": "Preface\nNotes for the lecture “IPI WS23/24” at Uni Heidelberg."
+  },
+  {
+    "objectID": "02/02.html#cond",
+    "href": "02/02.html#cond",
+    "title": "1  Functional Programming",
+    "section": "1.1 Cond",
+    "text": "1.1 Cond\nExample use:\n#include \"../code/fcpp.hh\"\n\nint absolut (int x)\n{\n    return cond( x &lt;= 0, -x, x);\n}\n\nint main ()\n{\n    print(absolut(-3));\n    return 0;\n}"
   }
 ]
