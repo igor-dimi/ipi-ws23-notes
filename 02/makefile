@@ -12,3 +12,12 @@ facf: facf.cc
 
 fakit: fakit.cc
 	g++ -o fakit fakit.cc
+
+fakit02: fakit02.cc
+	g++ -o fakit02 fakit02.cc
+
+fibrek: fibrek.cc
+	g++ -o fibrek fibrek.cc
+
+fibit: fibit.cc
+	g++ -o fibit fibit.cc

@@ -14,5 +14,5 @@ int fak(int n)
 
 int main()
 {
-    return dump(fak(10));
+    return fak(5);
 }
