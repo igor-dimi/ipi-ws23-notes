@@ -21,3 +21,6 @@ fibrek: fibrek.cc
 
 fibit: fibit.cc
 	g++ -o fibit fibit.cc
+
+binsearch: binsearch.cc
+	g++ -o binsearch binsearch.cc
