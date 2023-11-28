@@ -19,7 +19,7 @@ int main()
    //Post-condition: b possibly in a[i ... j] && (b == a[(i + j)/2] || i == j)
 
    if (b == a[(i + j)/2]) printf("%d\n", (i + j)/2);
-   else printf("not found\n");
+   else printf("%d\n", -1);
 
    return 0;
 }
