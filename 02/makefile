@@ -24,3 +24,6 @@ fibit: fibit.cc
 
 binsearch: binsearch.cc
 	g++ -o binsearch binsearch.cc
+
+gcd: gcd.cc
+	g++ -o gcd gcd.cc
