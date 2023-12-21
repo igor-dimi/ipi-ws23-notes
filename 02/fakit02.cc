@@ -14,7 +14,7 @@ int fak(int n)
     return fakit(1, n);
 }
 
-int main()
-{
-    return print(fak(5));
+int main(int argc, char** argv)
+{ 
+    return print(fak(readarg_int(argc, argv, 1)));
 }

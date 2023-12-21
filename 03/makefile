@@ -24,3 +24,12 @@ squareroot: squareroot.cc
 
 fakgo: fakgo.cc 
 	g++ -o fakgo fakgo.cc
+
+enum: enum.cc 
+	g++ -o enum enum.cc
+
+eratothenes: eratothenes.cc 
+	g++ -o eratothenes eratothenes.cc
+
+printchar: printchar.cc 
+	g++ -o printchar printchar.cc
