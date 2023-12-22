@@ -12,3 +12,6 @@ alphabet: alphabet.cc
 
 dynamic: dynamic.cc
 	g++ dynamic.cc -o dynamic
+
+set: set.cc
+	g++ set.cc -o set

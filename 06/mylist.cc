@@ -1,26 +1,26 @@
 #include "../code/fcpp.hh"
 
-struct list_el
+struct List_el
 {
-    list_el* next;
+    List_el* next;
     int value;
-}
+};
 
-struct list
+struct List
 {
     int count;
-    list_el* first;
-}
+    List_el* first;
+};
 
-void empty_list(list* l)
+void empty_list(List* l)
 {
     l->first = 0;
     l->count = 0;
-}
+};
 
-list_el* find(list l, int x)
+List_el* find(List l, int x)
 {
-    list_el* p;
+    List_el* p;
     while (p){
         if (p->value == x) return p;
         p = p->next;
@@ -28,7 +28,7 @@ list_el* find(list l, int x)
     return 0;
 }
 
-void insert(list* l, list_el* loc, list_el* el)
+void insert(List* l, List_el* loc, List_el* el)
 {
     if (loc == 0){
         el->next = l->first;
@@ -41,3 +41,21 @@ void insert(list* l, list_el* loc, list_el* el)
     }
 }
 
+List_el* remove(List* l, List_el* loc)
+{
+    List_el* p;
+    if (loc == 0){
+        p = l->first;
+        if(p){
+            l->first = p->next;
+            (l->count)--;
+        }
+        return p;
+    }
+    p = loc->next;
+    if(p){
+        loc->next = p->next;
+        (l->count)--;
+    }
+    return p;
+}
