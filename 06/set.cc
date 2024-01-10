@@ -19,7 +19,7 @@ void create_list(List* l)
 
 List_el* find(List l, int x)
 {
-    List_el* p;
+    List_el* p = l.first;
     while (p){
         if (p->value == x) return p;
         p = p->next;

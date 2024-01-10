@@ -1,6 +1,9 @@
 account_class: account_class.cc
 	g++ account_class.cc -o account_class
 
+class02: class02.cc
+	g++ class02.cc -o class02
+
 random: random.cc
 	g++ random.cc -o random
 

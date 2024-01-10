@@ -9,6 +9,10 @@ int main()
     r = (p + q*p)*p*p;
     r.print_rat();
 
+    Rational& s = q;
+    s.print_rat();
+    s.
+
     
     return 0;
 }
