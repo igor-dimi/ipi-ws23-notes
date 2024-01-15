@@ -24,3 +24,9 @@ set: set.cc
 
 struct02: struct02.cc
 	g++ struct02.cc -o struct02
+
+pointer03: pointer03.cc
+	g++ pointer03.cc -o pointer03
+
+accounts03: accounts03.cc
+	g++ accounts03.cc -o accounts03
