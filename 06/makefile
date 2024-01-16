@@ -30,3 +30,12 @@ pointer03: pointer03.cc
 
 accounts03: accounts03.cc
 	g++ accounts03.cc -o accounts03
+
+struct03: struct03.cc
+	g++ struct03.cc -o struct03
+
+dynamic02: dynamic02.cc
+	g++ dynamic02.cc -o dynamic02
+
+list03: list03.cc
+	g++ list03.cc -o list03

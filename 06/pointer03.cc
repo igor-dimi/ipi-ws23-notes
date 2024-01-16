@@ -3,6 +3,14 @@
 
 int n = 3;
 
+char* alphabet()
+{
+    char arr[27];
+    for (int i = 0; i < 26; i++) arr[i] = i + 65;
+    arr[26] = 0;
+    return arr;
+}
+
 int main(int argc, char** argv)
 {
     int m = 5;
@@ -45,6 +53,11 @@ int main(int argc, char** argv)
 
     print(argc);
     for (int i = 0; i < argc; i++) print(argv[i]);
+
+    char* arr = alphabet();
+    for (int i = 0; i < 26; i++) print(arr[i]);
+
+
 
     return 0;
 }
