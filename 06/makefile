@@ -39,3 +39,6 @@ dynamic02: dynamic02.cc
 
 list03: list03.cc
 	g++ list03.cc -o list03
+
+set03: set03.cc
+	g++ set03.cc -o set03
