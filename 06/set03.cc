@@ -140,19 +140,52 @@ void print_set(Set* s)
 int main()
 {
     Set* s = make_empty_set();
-    insert_in_set(s, 10);
-    insert_in_set(s, 11);
-    insert_in_set(s, 20);
-    insert_in_set(s, 19);
-    print_set(s); 
-    print("");
-    remove_from_set(s, 11);
-    print_set(s);
-    print("");
-    for (int i = 3; i < 100000; i *= 5)
-        insert_in_set(s, (17137 * i) % 47);
-    print_set(s);
-    print("");
+    // insert_in_set(s, 10);
+    // insert_in_set(s, 11);
+    // insert_in_set(s, 20);
+    // insert_in_set(s, 19);
+    // print_set(s); 
+    // print("");
+    // remove_from_set(s, 11);
+    // print_set(s);
+    // print("");
+    // for (int i = 3; i < 100000; i *= 5)
+    //     insert_in_set(s, (17137 * i) % 47);
+    // print_set(s);
+    // print("");
 
+    int user_input;
+    do {
+        //print set
+        print("count:", s->list.count, 0);
+        printf("set: "); print_set(s);
+        print("");
+
+        //print menu option
+        print("[1] add element");
+        print("[2] remove element");
+        print("[3] exit");
+
+        //scan user input & perform operation
+        scanf("%d", &user_input);
+        switch(user_input) {
+            case 1 :
+                int val1;
+                scanf("%d", &val1);
+                insert_in_set(s, val1);
+                break;
+            case 2 :
+                int val2;
+                scanf("%d", &val2);
+                remove_from_set(s, val2);
+                break;
+            case 3 :
+                break;
+            default :
+                print("invalid menu option!");
+                break;
+        }
+        
+    } while(user_input != 3);
 
 }
