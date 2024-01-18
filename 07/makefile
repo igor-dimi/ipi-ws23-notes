@@ -15,3 +15,6 @@ incrementer: incrementer.cc
 
 test_rational: test_rational.cc Rational.cc Rational.hh
 	g++ test_rational.cc -o test_rational
+
+class03: class03.cc Rational.cc Rational.hh
+	g++ class03.cc -o class03
