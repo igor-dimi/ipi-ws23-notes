@@ -6,3 +6,6 @@ namespaces: namespaces.cc
 
 iostream_test: iostream_test.cc
 	g++ -o iostream_test iostream_test.cc
+
+float_arr03: float_arr03.cc
+	g++ -o float_arr03 float_arr03.cc

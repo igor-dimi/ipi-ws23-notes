@@ -18,3 +18,9 @@ test_rational: test_rational.cc Rational.cc Rational.hh
 
 class03: class03.cc Rational.cc Rational.hh
 	g++ class03.cc -o class03
+
+operators: operators.cc Rational.cc Rational.hh
+	g++ operators.cc -o operators
+
+class04: class04.cc Rational.cc Rational.hh
+	g++ class04.cc -o class04
