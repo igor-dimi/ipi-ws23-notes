@@ -22,6 +22,18 @@ A f(int a)
     return obj;
 };
 
+int& g(int& a)
+{
+    a = a + 1;
+    return a;
+}
+
+int& h(int& a)
+{
+    int& b = a;
+    return b;
+}
+
 int main()
 {
     A a = f(3);
@@ -48,5 +60,13 @@ int main()
 
     for (int i = 0; i < 12; i++) print(p[i]);
     
+    int val = 10;
+    print("val: ", val, 0);
+    g(g(val));
+    print("val: ", val, 0);
+    int& ref = h(val);
+    ref++;
+    print("val: ", val, 0);
+    print("ref: ", ref, 0);
     return 0;
 }
