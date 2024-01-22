@@ -208,8 +208,9 @@ int main()
     Account acc_arr[10];
 
     for (int i = 0; i < 10; i++) print("account ", i, acc_arr[i].get_balance(), 0);
-    for (int i = 0; i < 10; i++) acc_arr[i].deposit(i*i + 10);
+    for (int i = 0; i < 10; i++) acc_arr[i].deposit(r.get_number()%200);
     for (int i = 0; i < 10; i++) print("account ", i, acc_arr[i].get_balance(), 0);
+    print(r.get_number()%100);
 
 
 
