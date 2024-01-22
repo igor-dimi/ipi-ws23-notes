@@ -6,4 +6,8 @@ test_rational
 class03
 class02
 iostream_test
+<<<<<<< HEAD
+=======
+operators
+>>>>>>> b7ecbea752cef8893e32b8d661b40011ee5663f0
 class04
