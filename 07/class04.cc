@@ -38,5 +38,15 @@ int main()
     e.set_a(100);
     print(e.get_a(), b.get_a(), 0);
 
+    float* p = new float[10];
+    for (int i = 0; i < 10; i++) p[i] = i;
+    float* q = new float[12];
+    for (int i = 0; i < 12; i++) q[i] = 2*i;
+
+    delete [] p;
+    p = q;
+
+    for (int i = 0; i < 12; i++) print(p[i]);
+    
     return 0;
 }
