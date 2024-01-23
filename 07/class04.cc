@@ -22,6 +22,11 @@ A f(int a)
     return obj;
 };
 
+int& f2(int& a)
+{
+    return a;
+}
+
 int main()
 {
     A a = f(3);
@@ -47,6 +52,11 @@ int main()
     p = q;
 
     for (int i = 0; i < 12; i++) print(p[i]);
+
+    int b3 = 20;
+    int& a3 = b3;
+    f2(a3) = 20;
+    print("b3: ", b3, 0);
     
     return 0;
 }
