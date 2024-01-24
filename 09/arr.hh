@@ -1,7 +1,7 @@
 class Array 
 {
     public: 
-        Array(int s, float f); //new array with s elements I = [0, s-1]
+        Array(int n, float val); //new array with s elements I = [0, s-1]
         Array(const Array& arr); //copy constructor
         Array& operator= (const Array& arr); //assignment operator
         ~Array(); //destructor
@@ -12,5 +12,5 @@ class Array
         bool is_member (int i); //is the index in the set
     private :
         int n; //number of elements
-        float* p; //pointer to the built-in array
+        float* arr; //pointer to the built-in array
 };
