@@ -1,5 +1,5 @@
 #include "polynomial.hh"
-// #include <iostream>
+#include <iostream>
 
 Polynomial::Polynomial (int n) : Array(n + 1, 0.0){}
 float Polynomial::eval(float x)
@@ -35,13 +35,13 @@ Polynomial Polynomial::operator* (Polynomial q)
     return r;
 }
 
-// void Polynomial::print ()
-// {
-//     if (degree() < 0) std::cout << 0;
-//     else std::cout << (*this)[min_index()];
-//     for (int i = min_index() + 1; i <= max_index(); i++)
-//         std::cout << " + " << (*this)[i] << "*x^" << i;
-// }
+void Polynomial::print ()
+{
+    if (degree() < 0) std::cout << 0;
+    else std::cout << (*this)[min_index()];
+    for (int i = min_index() + 1; i <= max_index(); i++)
+        std::cout << " + " << (*this)[i] << "*x^" << i;
+}
 
 bool Polynomial::operator== (Polynomial q)
 {

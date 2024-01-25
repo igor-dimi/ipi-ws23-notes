@@ -1,4 +1,4 @@
-#include "arr.hh"
+#include "arr.cc"
 
 class Polynomial : public Array { //class Polynomial inherits from class Array
     public :
