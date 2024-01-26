@@ -5,3 +5,4 @@ test_arr
 test_subclass
 test_inheritence
 test_checked
+test_virtual
