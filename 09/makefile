@@ -6,5 +6,7 @@ test_arr: test_arr.cc
 	g++ -o test_arr test_arr.cc
 test_subclass: test_subclass.cc
 	g++ -o test_subclass test_subclass.cc
-test_test_inheritence: test_test_inheritence.cc
-	g++ -o test_test_inheritence test_test_inheritence.cc
+test_inheritence: test_inheritence.cc
+	g++ -o test_inheritence test_inheritence.cc
+test_checked: test_checked.cc
+	g++ -o test_checked test_checked.cc
