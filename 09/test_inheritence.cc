@@ -51,7 +51,7 @@ int main()
     std::cout << f(b) << std::endl;
     b.set_x(25);
     std::cout << g(b) << std::endl;
-    // std::cout << g(a) << std::endl;
+    // std::cout << g(a) << std::endl; is an error! 
     
 
     return 0;
