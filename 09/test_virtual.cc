@@ -25,7 +25,7 @@ class Gazelle : public Animal
         void eat();
 };
 
-void Gazelle::eat() {std::cout << "gazelle's eat grass\n";}
+void Gazelle::eat() {std::cout << "gazelles eat grass\n";}  
 
 void f1(Animal& a)
 {
