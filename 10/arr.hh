@@ -1,3 +1,5 @@
+#ifndef ARR_H
+#define ARR_H
 class Array
 {
     public:
@@ -8,3 +10,4 @@ class Array
         virtual int max_index() = 0;
         virtual bool is_member (int i) = 0;
 };
+#endif // !ARR_H

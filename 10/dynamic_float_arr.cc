@@ -5,9 +5,9 @@ class DynamicFloatArray : public Array
     private :
         int n; //number of elements
         int f; //first index value
-        int l; //last index value
         float *p; //Pointer to the built in array
     public :
+        DynamicFloatArray (); 
         virtual ~DynamicFloatArray();
         virtual float& operator[](int i);
         virtual int num_index();
@@ -16,20 +16,19 @@ class DynamicFloatArray : public Array
         bool is_member(int i);
 };
 
+DynamicFloatArray::DynamicFloatArray() {n = 1; f = 0; p = new float[1];}
 DynamicFloatArray::~DynamicFloatArray() {delete[] p;}
 float& DynamicFloatArray::operator[](int i)
 {
     if (i < f || i >= f + n) {
         //determine new size
-        int ff, ll, nn;
+        int ff, nn;
         ff = f;
-        ll = l;
         nn = n;
         if(i < f) {
             ff = i;
             nn = n + f - i;
         } else {
-            ll = i;
             nn = i - f + 1;
         }
         //allocate new array
