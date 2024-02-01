@@ -14,7 +14,7 @@ void show(const T& container)
 // template <typename T>
 // void show2(const T& container)
 // {
-//     for (std::T::iterator it = x.begin(); x != x.end(); ++it)
+//     for (T::iterator it = x.begin(); x != x.end(); ++it)
 //         std::cout << *it << " ";
 //     std::endl;
 // }
