@@ -42,13 +42,6 @@ A f(int a)
     return obj;
 };
 
-<<<<<<< HEAD
-int& f2(int& a)
-{
-    return a;
-}
-
-=======
 int& g(int& a)
 {
     a = a + 1;
@@ -61,7 +54,6 @@ int& h(int& a)
     return b;
 }
 
->>>>>>> 18cd38b14cbbc0a5a5b7ba496270162fbe212d6c
 int main()
 {
     A obj1(10);
