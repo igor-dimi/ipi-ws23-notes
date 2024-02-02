@@ -1,7 +1,6 @@
 #include "CheckedArray.hh"
-#include <cassert>
 
-CheckedArray::CheckedArray(int n, float val) : Array(n, val)
+CheckedArray::CheckedArray (int n, float val) : Array(n, val)
 {}
 
 float& CheckedArray::operator[] (int i)
