@@ -1,3 +1,5 @@
+#ifndef ARR_H
+#define ARR_H
 template <class T> 
 class Array
 {
@@ -7,11 +9,11 @@ class Array
         {
             private :
                 T* p; 
-                Iterator (T* q) {p = q;}
+                Iterator (T* q) {p = q;};
             public :
-                Iterator () {p = 0;}
-                bool operator!= (Iterator x) {return (p != x.p)}
-                bool operator== (Iterator x) {return (p == x.p)}
+                Iterator () {p = 0;};
+                bool operator!= (Iterator x) {return (p != x.p);}
+                bool operator== (Iterator x) {return (p == x.p);}
                 Iterator operator++ () {p++; return *this;}
                 Iterator operator++ (int)
                 {
@@ -23,15 +25,17 @@ class Array
                 T* operator-> () const {return p;}
                 friend class Array<T>; 
         };
-        Iterator begin() const
-        Iterator end() const
-        Array(int m) //constructor
-        Array(const Array<T>&) //copy constructor
-        ~Array() //destructor
+        Iterator begin() const;
+        Iterator end() const;
+        Array(int m); //constructor
+        Array(const Array<T>&); //copy constructor
+        Array<T>& operator= (const Array<T>&);
+        ~Array(); //destructor
         int size () const; //size of the array, i.e. number of elements.
-        T& operator[](int i) 
+        T& operator[](int i);
     private :
         int n; // number of elements
-        T* p // pointer to the built-in array
+        T* p; // pointer to the built-in array
 
 };
+#endif
