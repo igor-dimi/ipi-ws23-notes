@@ -37,12 +37,12 @@ class DL_list
                     return tmp;
                 }
                 Iterator operator-- ()
-                {
+                { // prefix 
                     p = p->prev;
                     return *this;
                 }
                 Iterator operator-- (int)
-                {
+                { //postfix
                     Iterator tmp = *this;
                     p = p->prev;
                     return tmp;
@@ -74,7 +74,7 @@ class DL_list
         Iterator find (T item) const;
 
         private :
-            Iterator head; //First element of the list 
-            Iterator tail; 
+            Iterator head; // First element of the list 
+            Iterator tail; // Last element of the list
 };
 #endif // !DLL_H
