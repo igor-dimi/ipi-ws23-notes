@@ -1,5 +1,6 @@
 #include "dl_list.hh"
 #include <cassert>
+#include <iostream>
 
 // implementing insertion **before** position pointed by 'it'. 
 template<class T>
@@ -14,7 +15,7 @@ typename DL_list<T>::Iterator DL_list<T>::insert (Iterator it, T item)
         if (it.p != 0) { //'it' doesn't point to end of list, insert before 'it'
             el->prev = it.p->prev;
             it.p->prev = el;
-            el->prev->next = el;
+            // el->prev->next = el;
             if (head == it) head.p = el;
         } else { //it.p == 0, i.e. 'it' points to the end of list, insert el at the end
             el->prev = tail.p;
@@ -91,6 +92,8 @@ template<class T> int DL_list<T>::size() const
     return count;
 }
 
+
+
 template<class T>
 typename DL_list<T>::Iterator DL_list<T>::find(T item) const
 {
@@ -100,4 +103,14 @@ typename DL_list<T>::Iterator DL_list<T>::find(T item) const
         it++;
     }
     return it;
+}
+
+template<class T>
+void DL_list<T>::show()
+{
+    for(DL_list::Iterator it = begin(); it != end(); it++) {
+        if (it != end()) std::cout << *it << "->"; 
+        else std::cout << *it;
+    }
+    std::cout << std::endl;
 }

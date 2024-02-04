@@ -124,6 +124,7 @@ int main()
     Animal a6(g);
     a5.eat();
     a6.eat();
+    
 
     return 0;
     

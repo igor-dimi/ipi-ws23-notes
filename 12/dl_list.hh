@@ -73,6 +73,9 @@ class DL_list
         int size () const;
         Iterator find (T item) const;
 
+        // output
+        virtual void show();
+
         private :
             Iterator head; // First element of the list 
             Iterator tail; // Last element of the list

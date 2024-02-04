@@ -45,5 +45,8 @@ int main(int argc, char const *argv[])
 
     std::cout << ll.size() << std::endl;
 
+    l2.show();
+    std::cout << std::endl;
+
     return 0;
 }

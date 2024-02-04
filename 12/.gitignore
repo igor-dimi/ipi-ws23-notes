@@ -2,3 +2,12 @@ test_stl
 test_list
 test_dllist
 test_arr
+list02
+list03
+list04
+test_dequeue
+test_mpq
+test_pointer
+test_queue
+test_set
+test_stack

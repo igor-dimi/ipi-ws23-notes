@@ -12,3 +12,5 @@ test_checked: test_checked.cc
 	g++ -o test_checked test_checked.cc
 test_virtual: test_virtual.cc
 	g++ -o test_virtual test_virtual.cc
+test_inheritence02: test_inheritence02.cc
+	g++ -o test_inheritence02 test_inheritence02.cc
