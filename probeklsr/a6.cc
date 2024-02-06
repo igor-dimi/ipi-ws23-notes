@@ -14,10 +14,17 @@ class A
         virtual int norm() {return sqrt(a*a + b*b);}
         A() {a = 0; b = 0;};
         A(int _a, int _b) {a = _a; b = _b;}
+        A& operator= (const A& obj);
         virtual void show();
 };
 
 void A::show() {std::cout << a << " " << b;}
+A& A::operator=(const A& obj)
+{
+    a = obj.a;
+    b = obj.b;
+    return *this;
+}
 
 class B : public A 
 {
@@ -65,6 +72,12 @@ int main(int argc, char const *argv[])
 
     A& ob7(ob5);
     ob7.show(); std::cout << std::endl;
+
+    A ob8(-1, -2);
+    A ob9, ob10;
+    ob10 = ob9 = ob8;
+    ob9.show(); std::cout << std::endl;
+    ob10.show(); std::cout << std::endl;
 
     return 0;
 }
